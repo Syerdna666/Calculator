@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+body,
+p {
+  margin: 0;
+}
+
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  font-family: "Quicksand", sans-serif;
+  background: #8EC5FC linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.container {
+  max-width: 20em;
+}
+
+.container > p {
+  text-align: center;
+}
+
+p {
+  color: #333;
+  font-size: 2em;
+}
+
+.small-text {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.mini-text {
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+
+.calc {
+  background: #ffffff;
+  margin: auto;
+  position: relative;
+  height: 24em;
+  width: 20em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.3);
+}
+
+.calc-display {
+  background: #ffffff;
+  color: #000;
+  font-size: 2.5em;
+  padding: 0.5em 0.75em;
+  text-align: right;
+}
+
+.calc-key {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calc-key > * {
+  padding: 1.25em 1.25em;
+  position: relative;
+  text-align: center;
+}
+
+.calc-key > *:active::before,
+.calc-key > .is-depressed::before {
+  background: #8EC5FC;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 1;
+}
+
+button {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  outline: none;
+  appearance: none;
+  text-align: left;
+}
+
+button:hover,
+button:active,
+button:focus {
+  outline: none;
+}
+
+.key-op {
+  background: #eee;
+  font-size: 1.25em;
+  padding: 0.8em;
+}
+
+.key-eq {
+  background: #333;
+  color: #ffffff;
+  grid-column: -2;
+  grid-row: 2/span 4;
+  font-size: 1.25em;
+}
+
+.themer {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 10em;
+}
+
+.switch {
+  padding: 1.1em;
+  border-radius: 50%;
+}
+
+.opt1 {
+  background: #2196f3;
+}
+
+.opt2 {
+  background: #9c27b0;
+}
+
+.opt3 {
+  background: #e91e63;
+}
